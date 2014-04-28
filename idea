@@ -15,3 +15,5 @@ Did they carefully examine the body? Find cause of death? Call for help? return 
 
 
 to win you must reduce all your deaths to zero. You need to find out what lies beneath the surface of not yourself, but the hell reality you now inhabit. Find your corpses. Find out what your first death was. Save yourself or you won't be able to ever leave.
+
+upon finding their body, the player will relive their death, but the death counter goes down. it potentially weakens them, ( should i implement this?) but as the memory counter goes up they will retain memories of where they have been and potentially it may help them get where they want to go.

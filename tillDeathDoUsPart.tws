@@ -244,7 +244,7 @@ Tiddler
 p85
 (dp86
 g19
-V<<if $deaths eq 0>>YOU WIN\u000a<<else if $deaths eq 1>>story\u000a<<else if $deaths eq 2>>MoreStoryHere\u000a<<else>>evenMoreStoryHere<<endif>><<endif>><<endif>>
+V<<if $deaths eq 0>>YOU WIN\u000a<<else if $deaths eq 1>>You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. [[Peering|peerTheDarkness]] deeply into the black stillness around you is a frightening prospect, but not nearly as terrifying as the idea of [[navigating|navigateTheDarkness]] your way around it without some form of lumination to help guide you.\u000a<<else if $deaths eq 2>>You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. [[Peering|peerTheDarkness]] deeply into the black stillness around you is a frightening prospect, but not nearly as terrifying as the idea of [[navigating|navigateTheDarkness]] your way around it without some form of lumination to help guide you. [[Feeling|feelTheDarkness]] blah blah\u000a<<else>>You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. [[Peering|peerTheDarkness]] deeply into the black stillness around you is a frightening prospect, but not nearly as terrifying as the idea of [[navigating|navigateTheDarkness]] your way around it without some form of [[lumination|light]] to help guide you. [[Feeling|feelTheDarkness]] blah blah<<endif>><<endif>><<endif>>
 p87
 sg21
 VfakeStart
@@ -253,12 +253,12 @@ sg23
 g24
 ((I2014
 I4
-I27
-I20
-I24
-I55
-I6
-I117
+I28
+I0
+I47
+I53
+I0
+I118
 I1
 tp89
 (dp90
@@ -400,7 +400,7 @@ Tiddler
 p133
 (dp134
 g19
-V<<timedremove 10s>><html><font color="777777">You are drifting, falling, flying effortlessly into a white expanse of light that now surrounds you. As the brightness diffuses, burning itself into your retina, you quickly close your eyes in an attempt to shut it out. Startlingly, the brightness that you saw with your eyelids open is still present with them closed and getting brighter every moment. Opening your eyes and twisting about in an effort to get some form of bearing does not change what you are seeing. The light buries itself into your mind, seizing it in a fantastic moment of pain...</font></html>\u000a\u000a<<endtimedremove>>You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. [[Peering|peerTheDarkness]] deeply into it is a frightening prospect, but not nearly as terrifying as the idea of [[navigating|navigateTheDarkness]] your way around
+V<<set $deaths = 1>>\u005c\u000a<<timedremove 10s>><html><font color="777777">You are drifting, falling, flying effortlessly into a white expanse of light that now surrounds you. As the brightness diffuses, burning itself into your retina, you quickly close your eyes in an attempt to shut it out. Startlingly, the brightness that you saw with your eyelids open is still present with them closed and getting brighter every moment. Opening your eyes and twisting about in an effort to get some form of bearing does not change what you are seeing. The light buries itself into your mind, seizing it in a fantastic moment of pain...</font></html>\u000a\u000a<<endtimedremove>>You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. [[Peering|peerTheDarkness]] deeply into the black stillness around you is a frightening prospect, but not nearly as terrifying as the idea of [[navigating|navigateTheDarkness]] your way around it without some form of lumination to help guide you.
 p135
 sg21
 VintroTwo
@@ -409,12 +409,12 @@ sg23
 g24
 ((I2014
 I4
-I27
-I23
-I59
-I17
-I6
-I117
+I28
+I0
+I46
+I49
+I0
+I118
 I1
 tp137
 (dp138
@@ -452,7 +452,7 @@ Tiddler
 p149
 (dp150
 g19
-Vbody {\u000a	background-color: #101010;\u000a	color: #AAAAAA;\u000a	font-size: 21px;\u000a}\u000a\u000a/*HIDE SIDEBAR/PASSAGES BORDER*/\u000a#sidebar {visibility:hidden}\u000a\u000a#passages {\u000a	margin: 0px;\u000a	border-left: 0px;\u000a}\u000a\u000a.passage a:hover {\u000a	text-decoration: none;\u000a}\u000a\u000a/*REPLACE MACRO SET*/\u000a.revision-span-in {\u000a	opacity: 0;\u000a}\u000a.revision-span:not(.revision-span-out) {\u000a	transition: 1s; -webkit-transition: 1s;\u000a}\u000a.revision-span-out {\u000a	position:absolute;\u000a	opacity: 0;\u000a}
+Vbody {\u000a	background-color: #101010;\u000a	color: #AAAAAA;\u000a	font-size: 21px;\u000a}\u000a\u000a/*HIDE SIDEBAR/PASSAGES BORDER*/\u000a#sidebar {visibility:hidden}\u000a\u000a#passages {\u000a	margin: 0px;\u000a	border-left: 0px;\u000a}\u000a\u000a.passage a {\u000a	color: #660000;\u000a}\u000a\u000a.passage a:hover {\u000a	color: #8A0000;\u000a	text-decoration: none;\u000a}\u000a\u000a/*REPLACE MACRO SET*/\u000a.revision-span-in {\u000a	opacity: 0;\u000a}\u000a.revision-span:not(.revision-span-out) {\u000a	transition: 1s; -webkit-transition: 1s;\u000a}\u000a.revision-span-out {\u000a	position:absolute;\u000a	opacity: 0;\u000a}
 p151
 sg21
 VStylesheet
@@ -461,12 +461,12 @@ sg23
 g24
 ((I2014
 I4
-I27
-I23
-I24
-I22
-I6
-I117
+I28
+I0
+I17
+I33
+I0
+I118
 I1
 tp153
 (dp154
@@ -556,7 +556,7 @@ Tiddler
 p181
 (dp182
 g19
-V<<set $deaths = 1>>\u005c\u000aYou are drifting, falling, flying effortlessly into a white expanse of light that now surrounds you. As the brightness diffuses, burning itself into your retina, you quickly close your eyes in an attempt to shut it out. Startlingly, the brightness that you saw with your eyelids open is still present with them closed and getting brighter every moment. Opening your eyes and twisting about in an effort to get some form of bearing does not change what you are seeing. The light buries itself into your mind, seizing it in a fantastic moment of pain...\u000a<<timedgoto "introTwo" 16s>>
+VYou are drifting, falling, flying effortlessly into a white expanse of light that now surrounds you. As the brightness diffuses, burning itself into your retina, you quickly close your eyes in an attempt to shut it out. Startlingly, the brightness that you saw with your eyelids open is still present with them closed and getting brighter every moment. Opening your eyes and twisting about in an effort to get some form of bearing does not change what you are seeing. The light buries itself into your mind, seizing it in a fantastic moment of pain...\u000a<<timedgoto "introTwo" 16s>>
 p183
 sg21
 VintroOne
@@ -565,12 +565,12 @@ sg23
 g24
 ((I2014
 I4
-I27
-I23
-I29
-I45
-I6
-I117
+I28
+I0
+I40
+I53
+I0
+I118
 I1
 tp185
 (dp186
@@ -649,10 +649,410 @@ tp208
 (dp209
 tp210
 Rp211
+sbsa(dp212
+g12
+I00
+sg13
+(lp213
+F570.0
+aF570.0
+asg15
+(itiddlywiki
+Tiddler
+p214
+(dp215
+g19
+V<<if $deaths lte 1>>Slowly crawling off of the 'bed' you awoke on reveals a surprisingly warm but solid flooring. Its surface feels marred, cracked, and weathered. Not only is slightly warm but it feels as though it may be emanating heat. You consider [[crawling back|thePit]] to where you came from, the idea of wherever it is that you are having a tepid floor <html><i>is</i></html> a bit unnerving.\u000a\u000aDespite having no idea where you are or what lies before you the idea of [[moving forward|intoTheDarkness]] and exploring more of your environment whispers quietly in the back of your mind.\u000a<<else if $deaths eq 2>>Slowly crawling off of the 'bed' you awoke on reveals a surprisingly warm but solid flooring. Its surface feels marred, cracked, and weathered. Not only is slightly warm but it feels as though it may be emanating heat. You consider [[crawling back|thePit]] to where you came from, the idea of wherever it is that you are having a tepid floor <html><i>is</i></html> a bit unnerving.\u000a\u000aDespite having no idea where you are or what lies before you the idea of [[moving forward|intoTheDarkness]] and exploring more of your environment whispers quietly in the back of your [[mind|personalHistory]].<<endif>><<endif>>
+p216
+sg21
+VnavigateTheDarkness
+p217
+sg23
+g24
+((I2014
+I4
+I28
+I1
+I17
+I38
+I0
+I118
+I1
+tp218
+(dp219
+tp220
+Rp221
+sg29
+(lp222
+sg33
+g24
+((I2014
+I4
+I28
+I0
+I23
+I25
+I0
+I118
+I1
+tp223
+(dp224
+tp225
+Rp226
+sbsa(dp227
+g12
+I00
+sg13
+(lp228
+F570.0
+aF710.0
+asg15
+(itiddlywiki
+Tiddler
+p229
+(dp230
+g19
+VYou stare into the darkness till your surroundings become more recognizable.
+p231
+sg21
+VpeerTheDarkness
+p232
+sg23
+g24
+((I2014
+I4
+I28
+I0
+I58
+I53
+I0
+I118
+I1
+tp233
+(dp234
+tp235
+Rp236
+sg29
+(lp237
+sg33
+g24
+((I2014
+I4
+I28
+I0
+I23
+I26
+I0
+I118
+I1
+tp238
+(dp239
+tp240
+Rp241
+sbsa(dp242
+g12
+I00
+sg13
+(lp243
+F710.0
+aF570.0
+asg15
+(itiddlywiki
+Tiddler
+p244
+(dp245
+g19
+VCarefully feeling your way around the 'bed' you awoke on
+p246
+sg21
+VfeelTheDarkness
+p247
+sg23
+g24
+((I2014
+I4
+I28
+I0
+I27
+I37
+I0
+I118
+I1
+tp248
+(dp249
+tp250
+Rp251
+sg29
+(lp252
+sg33
+g24
+((I2014
+I4
+I28
+I0
+I24
+I56
+I0
+I118
+I1
+tp253
+(dp254
+tp255
+Rp256
+sbsa(dp257
+g12
+I00
+sg13
+(lp258
+F570.0
+aF150.0
+asg15
+(itiddlywiki
+Tiddler
+p259
+(dp260
+g19
+V<set $deaths += 1>\u005c\u000aYou fall into this when you explore the darkness foolishly.
+p261
+sg21
+VthePit
+p262
+sg23
+g24
+((I2014
+I4
+I28
+I1
+I18
+I26
+I0
+I118
+I1
+tp263
+(dp264
+tp265
+Rp266
+sg29
+(lp267
+sg33
+g24
+((I2014
+I4
+I28
+I0
+I41
+I43
+I0
+I118
+I1
+tp268
+(dp269
+tp270
+Rp271
+sbsa(dp272
+g12
+I00
+sg13
+(lp273
+F290.0
+aF990.0
+asg15
+(itiddlywiki
+Tiddler
+p274
+(dp275
+g19
+V/*add story here*/\u005c\u000aYou are a person!\u000a\u000a[[goback|previous()]]
+p276
+sg21
+VpersonalHistory
+p277
+sg23
+g24
+((I2014
+I4
+I28
+I0
+I57
+I46
+I0
+I118
+I1
+tp278
+(dp279
+tp280
+Rp281
+sg29
+(lp282
+sg33
+g24
+((I2014
+I4
+I28
+I0
+I55
+I32
+I0
+I118
+I1
+tp283
+(dp284
+tp285
+Rp286
+sbsa(dp287
+g12
+I00
+sg13
+(lp288
+F710.0
+aF710.0
+asg15
+(itiddlywiki
+Tiddler
+p289
+(dp290
+g19
+VCrawling further into the darkness you come upon what feels like an incline. The floor gets rougher and a faint, warm breeze drifts against your face. Turning around...
+p291
+sg21
+VintoTheDarkness
+p292
+sg23
+g24
+((I2014
+I4
+I28
+I1
+I18
+I56
+I0
+I118
+I1
+tp293
+(dp294
+tp295
+Rp296
+sg29
+(lp297
+sg33
+g24
+((I2014
+I4
+I28
+I0
+I57
+I58
+I0
+I118
+I1
+tp298
+(dp299
+tp300
+Rp301
+sbsa(dp302
+g12
+I00
+sg13
+(lp303
+F850.0
+aF10.0
+asg15
+(itiddlywiki
+Tiddler
+p304
+(dp305
+g19
+V
+p306
+sg21
+Vlight
+p307
+sg23
+g24
+((I2014
+I4
+I28
+I0
+I59
+I36
+I0
+I118
+I1
+tp308
+(dp309
+tp310
+Rp311
+sg29
+(lp312
+sg33
+g24
+((I2014
+I4
+I28
+I0
+I59
+I26
+I0
+I118
+I1
+tp313
+(dp314
+tp315
+Rp316
+sbsa(dp317
+g12
+I00
+sg13
+(lp318
+F1130.0
+aF290.0
+asg15
+(itiddlywiki
+Tiddler
+p319
+(dp320
+g19
+VThis is where you died. Initially. The first time. Become one with your death again and leave this purgatory already.
+p321
+sg21
+VthatOneRoom
+p322
+sg23
+g24
+((I2014
+I4
+I28
+I1
+I15
+I57
+I0
+I118
+I1
+tp323
+(dp324
+tp325
+Rp326
+sg29
+(lp327
+sg33
+g24
+((I2014
+I4
+I28
+I1
+I15
+I13
+I0
+I118
+I1
+tp328
+(dp329
+tp330
+Rp331
 sbsasS'scale'
-p212
-F1.0
+p332
+F0.8
 sS'snapping'
-p213
+p333
 I01
 ss.
