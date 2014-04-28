@@ -662,7 +662,7 @@ Tiddler
 p214
 (dp215
 g19
-V<<if $deaths lte 1>>Slowly crawling off of the 'bed' you awoke on reveals a surprisingly warm but solid flooring. Its surface feels marred, cracked, and weathered. Not only is slightly warm but it feels as though it may be emanating heat. You consider [[crawling back|thePit]] to where you came from, the idea of wherever it is that you are having a tepid floor <html><i>is</i></html> a bit unnerving.\u000a\u000aDespite having no idea where you are or what lies before you the idea of [[moving forward|intoTheDarkness]] and exploring more of your environment whispers quietly in the back of your mind.\u000a<<else if $deaths eq 2>>Slowly crawling off of the 'bed' you awoke on reveals a surprisingly warm but solid flooring. Its surface feels marred, cracked, and weathered. Not only is slightly warm but it feels as though it may be emanating heat. You consider [[crawling back|thePit]] to where you came from, the idea of wherever it is that you are having a tepid floor <html><i>is</i></html> a bit unnerving.\u000a\u000aDespite having no idea where you are or what lies before you the idea of [[moving forward|intoTheDarkness]] and exploring more of your environment whispers quietly in the back of your [[mind|personalHistory]].<<endif>><<endif>>
+V<<if $deaths lte 1>>Slowly crawling off of the 'bed' you awoke on reveals a surprisingly warm but solid flooring. Its surface feels marred, cracked, and weathered. Not only is slightly warm but it feels as though it may be emanating heat. You consider [[crawling back|thePit]] to where you came from, the idea that wherever 'here' is has a tepid floor and impenetrable darkness is just a tad unnerving.\u000a\u000aDespite having no idea where you are or what lies before you the idea of [[moving forward|intoTheDarkness]] and exploring more of your environment whispers quietly in the back of your mind.\u000a<<else if $deaths eq 2>>Slowly crawling off of the 'bed' you awoke on reveals a surprisingly warm but solid flooring. Its surface feels marred, cracked, and weathered. Not only is slightly warm but it feels as though it may be emanating heat. You consider [[crawling back|thePit]] to where you came from, the idea of wherever it is that you are having a tepid floor <html><i>is</i></html> a bit unnerving.\u000a\u000aDespite having no idea where you are or what lies before you the idea of [[moving forward|intoTheDarkness]] and exploring more of your environment whispers quietly in the back of your [[mind|personalHistory]].<<endif>><<endif>>
 p216
 sg21
 VnavigateTheDarkness
@@ -672,9 +672,9 @@ g24
 ((I2014
 I4
 I28
-I1
-I17
-I38
+I2
+I36
+I35
 I0
 I118
 I1
@@ -812,7 +812,7 @@ Tiddler
 p259
 (dp260
 g19
-V<set $deaths += 1>\u005c\u000aYou fall into this when you explore the darkness foolishly.
+V<<set $deaths += 1>>\u005c\u000aTurning around, you start crawling back to where you came from. Sometimes, heading back to where you have been is safer or might offer more insight. Unfortunately, this is not one of those times. In the complete darkness, you realize, to turn around is to make a poor guess as to where you came from.\u000a\u000aStanding now, striding through the nothing to find something, you walk in an attempt locate something that can be used as a point of reference. A few steps to the left, a dash behind you. You're getting frantic, the penetrating darkness, the inky, black silence. You rush in an effort to create more noise to fill the gaps but the murk swallows everything whole.\u000a\u000aSuddenly, your foot makes an effort to come into contact with what your uninformed and frightened mind tells it is floor but it fails. As quickly as the adrenaline your brain sends out in response is rushing into your bloodstream you find your center of gravity is changing.\u000a\u000aRather, you find that you're falling, flailing, and thrashing face forward into pitch darkness with no bearing of up or down and whether this fall is small.\u000a\u000a[[It isn't|fakeStart]]
 p261
 sg21
 VthePit
@@ -822,9 +822,9 @@ g24
 ((I2014
 I4
 I28
-I1
-I18
-I26
+I3
+I2
+I23
 I0
 I118
 I1
