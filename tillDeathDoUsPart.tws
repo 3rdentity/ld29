@@ -5,7 +5,7 @@ VC:\u005cProgram Files (x86)\u005cDevelopment\u005cProjects\u005cLD29\u005cdeepe
 p2
 sS'saveDestination'
 p3
-VC:\u005cProgram Files (x86)\u005cDevelopment\u005cProjects\u005cLD29\u005ctillDeathDoUsPart.tws
+S'C:\\Program Files (x86)\\Development\\Projects\\LD29\\tillDeathDoUsPart.tws'
 p4
 sS'target'
 p5
@@ -244,7 +244,7 @@ Tiddler
 p85
 (dp86
 g19
-V<<if $deaths eq 0>>YOU WIN\u000a<<else if $deaths eq 1>>You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. [[Peering|peerTheDarkness]] deeply into the black stillness around you is a frightening prospect, but not nearly as terrifying as the idea of [[navigating|navigateTheDarkness]] your way around it without some form of lumination to help guide you.\u000a<<else if $deaths eq 2>>You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. [[Peering|peerTheDarkness]] deeply into the black stillness around you is a frightening prospect, but not nearly as terrifying as the idea of [[navigating|navigateTheDarkness]] your way around it without some form of lumination to help guide you. [[Feeling|feelTheDarkness]] blah blah\u000a<<else>>You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. [[Peering|peerTheDarkness]] deeply into the black stillness around you is a frightening prospect, but not nearly as terrifying as the idea of [[navigating|navigateTheDarkness]] your way around it without some form of [[lumination|light]] to help guide you. [[Feeling|feelTheDarkness]] blah blah<<endif>><<endif>><<endif>>
+V<<if $deaths eq 0>>YOU WIN\u000a<<else if $deaths eq 1>>You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. [[Peering|peerTheDarkness]] deeply into the black stillness around you is a frightening prospect, but not nearly as terrifying as the idea of [[navigating|navigateTheDarkness]] your way around it without some form of lumination to help guide you.\u000a<<else if $deaths eq 2>>You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. [[Peering|peerTheDarkness]] deeply into the black stillness around you is a frightening prospect, but not nearly as terrifying as the idea of [[navigating|navigateTheDarkness]] your way around it without some form of lumination to help guide you. You consider for a brief moment to [[feel|feelTheDarkness]] around the surface of whatever object you are currently reclining on to get a better idea of your immediate surroundings.\u000a<<else>>You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. [[Peering|peerTheDarkness]] deeply into the black stillness around you is a frightening prospect, but not nearly as terrifying as the idea of [[navigating|navigateTheDarkness]] your way around it without some form of [[lumination|light]] to help guide you. You consider for a brief moment to [[feel|feelTheDarkness]] around the surface of whatever object you are currently reclining on to get a better idea of your immediate surroundings.<<endif>><<endif>><<endif>>
 p87
 sg21
 VfakeStart
@@ -254,9 +254,9 @@ g24
 ((I2014
 I4
 I28
-I0
-I47
-I53
+I15
+I19
+I40
 I0
 I118
 I1
@@ -762,7 +762,7 @@ Tiddler
 p244
 (dp245
 g19
-VCarefully feeling your way around the 'bed' you awoke on
+VCarefully feeling your way around the 'bed' you awoke on you realize that it is really more of a large stone tablet.
 p246
 sg21
 VfeelTheDarkness
@@ -772,9 +772,9 @@ g24
 ((I2014
 I4
 I28
-I0
+I16
 I27
-I37
+I57
 I0
 I118
 I1
@@ -912,7 +912,7 @@ Tiddler
 p289
 (dp290
 g19
-VCrawling further into the darkness you come upon what feels like an incline. The floor gets rougher and a faint, warm breeze drifts against your face. Turning around...
+VCrawling further into the darkness you come upon what feels like an incline. The floor gets rougher and a faint, warm breeze drifts against your face. [[Turning back|thePit]] to head to more familiar terrain is something that nags at that back of your head as you [[continue forward|theSummit]]
 p291
 sg21
 VintoTheDarkness
@@ -922,9 +922,9 @@ g24
 ((I2014
 I4
 I28
-I1
-I18
-I56
+I15
+I14
+I53
 I0
 I118
 I1
@@ -1049,10 +1049,59 @@ tp328
 (dp329
 tp330
 Rp331
+sbsa(dp332
+g12
+I00
+sg13
+(lp333
+F990.0
+aF570.0
+asg15
+(itiddlywiki
+Tiddler
+p334
+(dp335
+g19
+g306
+sg21
+VtheSummit
+p336
+sg23
+g24
+((I2014
+I4
+I28
+I15
+I15
+I14
+I0
+I118
+I1
+tp337
+(dp338
+tp339
+Rp340
+sg29
+(lp341
+sg33
+g24
+((I2014
+I4
+I28
+I15
+I15
+I5
+I0
+I118
+I1
+tp342
+(dp343
+tp344
+Rp345
 sbsasS'scale'
-p332
+p346
 F0.8
 sS'snapping'
-p333
+p347
 I01
 ss.
