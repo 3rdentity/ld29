@@ -1,0 +1,23 @@
+body {
+	background-color: #272822;
+	color: #DEDEDE;
+}
+div {
+	margin-top: 33px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	height: 444px;
+	width: 888px;
+	color: #71716F;
+	font-size: 33px;
+	text-align: center;	
+}
+
+#mainWindow {
+	border-style: none;
+}
+
+.introTitle {
+	font-size: 111px;
+}
