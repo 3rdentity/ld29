@@ -2,10 +2,70 @@
 
 body {
 	background-color: #272822;
-	color: #DEDEDE;
+	color: #BBBBBB;
+	text-align: center;
+	font-size: medium;
+}
+
+a {
+	color: #BBBBBB;
+}
+
+hr {
+	border: 1px solid #888888;
+}
+
+.container {
+	margin-top: 12px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	height: auto;
+	width: 777px;
+	/*box-shadow: 8px 8px 8px #000000;*/
+	font-size: large;
+	text-align: left;
 }
 
 /*------------NOTIFICATIONS------------*/
+
+.noJavaNotify {
+	margin: -8px auto 8px auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 3px;
+	height: auto;
+	width: 666px;
+	background-color: #D36B69;
+	color: #000000;
+	border-color: #A6A6A6;
+	border-style: ridge;
+	border-width: 3px;
+	text-align: center;
+	font-size: medium;
+}
+
+#oldIENotify {
+	margin: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 3px;
+	height: auto;
+	width: 666px;
+	background-color: #F8D86A;
+	color: #000000;
+	border-color: #A6A6A6;
+	border-style: ridge;
+	border-width: 3px;
+	text-align: center;
+	font-size: medium;
+}
+
+#oldIENotify a {
+	color: #000000;
+}
 
 #notifyBtn {
 	display: inline-block;
@@ -27,19 +87,52 @@ body {
 	color: #000000;
 }
 
-.noJavaNotify {
-	margin: -8px auto 8px auto;
+/*------------NOSCRIPT&OLDBROWSER------------*/
+
+.browserIcons {
+	text-align: center;
+	font-size: medium;"
+}
+
+.sectionBorder {
+	width: 282px;
+	background-image: url("resources/backgrounds/clear.png");
+	border-color: #4A4B4C;
+	border-radius: 33px;
+	border-width: 1px;
+	border-top-style: transparent;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: transparent;
+}
+
+.sectionTitle {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 12px;
+	font-size: x-large;
+}
+
+.instructions {
+	margin-top: 3px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
 	padding-top: 0px;
 	padding-right: 0px;
-	padding-left: 0px;
-	padding-bottom: 3px;
-	height: auto;
-	width: 666px;
-	background-color: #D36B69;
-	color: #000000;
-	border-color: #A6A6A6;
-	border-style: ridge;
-	border-width: 3px;
-	text-align: center;
+	padding-bottom: 0px;
+	padding-left: 44px;
 	font-size: medium;
+}
+
+.instructions li {
+	padding-bottom: 3px;
+}
+
+.screenshotLink {
+	text-align: center;
+	padding-top:12px;
 }

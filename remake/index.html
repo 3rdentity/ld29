@@ -11,11 +11,28 @@
 		<meta name="author" content="Ryan Combes">
 		<meta name="description" content="a game exploring a metaphysical response to one's environment">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="scripts/main.js"></script>
 		<!--INSERT FAVICON?-->
 		<title>untitledGame</title>
 	</head>
 	<body>
 		<!--banner?-->
-		hello world
+		<noscript>
+			<div class="noJavaNotify">
+				<b>It appears that Javascript is not enabled on your browser.</b><br>
+				This game uses javascript to function correctly.<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enable Javascript before continuing.
+				<a href="noScript.html"><div id="notifyBtn" style="background-color: #D36B69">learn more</div></a>
+			</div>
+		</noscript>
+		<!--notify user that their IE browser is outdated and request that they update-->
+		<!--[if lt IE 9]>
+			<div id="oldIENotify">
+				This games uses HTML5 and CSS3 which your current browser does not appear to support.<br>
+				In order to play it is necessary to upgrade to the latest version of:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><a  href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">Internet Explorer</a>, <a  href="https://www.google.com/chrome/browser/" target="_blank">Chrome</a>, <a  href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>, <a  href="http://support.apple.com/downloads/#safari" target="_blank">Safari</a>, or <a  href="http://www.opera.com/computer/windows" target="_blank">Opera</a></b>.
+				<a href="oldBrowser.html"><div id="notifyBtn" style="background-color: #F8D86A" onMouseDown="clickBtn(this)">learn more</div></a>
+			</div>
+		<![endif]-->
+		<h1>untitledGame</h1>
 	</body>
 </html>
