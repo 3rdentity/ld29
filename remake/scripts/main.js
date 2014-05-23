@@ -44,6 +44,14 @@ function hideParent(name) {
 	name.parentNode.style.display = "none";
 }
 
+function show(name) {
+	document.getElementById(name).style.display = "initial";
+}
+
+function showParent(name) {
+	name.parentNode.style.display = "initial";
+}
+
 function clickBtn(name) {
-	name.style.border= "1px inset #4A4B4C";
+	name.style.border = "1px inset #4A4B4C";
 }
