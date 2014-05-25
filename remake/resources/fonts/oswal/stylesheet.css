@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('oswal-bold.eot');
+    src: url('oswal-bold.eot?#iefix') format('embedded-opentype'),
+         url('oswal-bold.woff') format('woff'),
+         url('oswal-bold.ttf') format('truetype'),
+         url('oswal-bold.svg#oswaldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('oswal-light.eot');
+    src: url('oswal-light.eot?#iefix') format('embedded-opentype'),
+         url('oswal-light.woff') format('woff'),
+         url('oswal-light.ttf') format('truetype'),
+         url('oswal-light.svg#oswaldlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('oswal-regular.eot');
+    src: url('oswal-regular.eot?#iefix') format('embedded-opentype'),
+         url('oswal-regular.woff') format('woff'),
+         url('oswal-regular.ttf') format('truetype'),
+         url('oswal-regular.svg#oswaldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
