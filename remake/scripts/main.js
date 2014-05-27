@@ -17,13 +17,13 @@ function fadeIn(name) {
 	if (t != -1) {
 		show(name);
 		name.parentNode.style.animation = "invisToVis 1s 1 forwards";
-		//Safari & Chrome
+		//Safari & Chromium
 		name.parentNode.style.WebkitAnimation = "invisToVis 1s 1 forwards";
 	}
 	else {
 		show(name);
 		document.getElementById(name).style.animation = "invisToVis 1s 1 forwards";
-		//Safari & Chrome
+		//Safari & Chromium
 		document.getElementById(name).style.WebkitAnimation = "invisToVis 1s 1 forwards";
 	}
 }
@@ -34,13 +34,13 @@ function fadeOut(name) {
 	var t = nameStr.indexOf(searchFor);
 	if (t != -1) {
 		name.parentNode.style.animation = "visToInvis 1s 1 forwards";
-		//Safari & Chrome
+		//Safari & Chromium
 		name.parentNode.style.WebkitAnimation = "visToInvis 1s 1 forwards";
 		hide(name);
 	}
 	else {
 		document.getElementById(name).style.animation = "visToInvis 1s 1 forwards";
-		//Safari & Chrome
+		//Safari & Chromium
 		document.getElementById(name).style.WebkitAnimation = "visToInvis 1s 1 forwards";
 		hide(name);
 	}
@@ -71,6 +71,6 @@ function show(name) {
 	
 }
 
-function clickBtn(name) {
-	name.style.border = "1px inset #4A4B4C";
+function downMenu(name) {
+	name.style.border = "3px solid #BBBBBB";
 }

@@ -13,11 +13,21 @@
 
 /*------------ANIMATIONS------------*/
 
+@keyframes dropPresent {
+	0% {margin: 161px 0px 0px 0px; opacity: 0; font-size: 77px;}
+	100% {margin: 333px 0px 0px 0px; opacity: 1; font-size: 123px;}
+}
+/*Safari & Chromium*/
+@-webkit-keyframes dropPresent {
+	0% {margin: 161px 0px 0px 0px; opacity: 0; font-size: 77px;}
+	100% {margin: 333px 0px 0px 0px; opacity: 1; font-size: 123px;}
+}
+
 @keyframes invisToVis {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
 }
-/*Safari & Chrome*/
+/*Safari & Chromium*/
 @-webkit-keyframes invisToVis {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
@@ -27,7 +37,7 @@
 	0% {opacity: 1;}
 	100% {opacity: 0;}
 }
-/*Safari & Chrome*/
+/*Safari & Chromium*/
 @-webkit-keyframes visToInvis {
 	0% {opacity: 1;}
 	100% {opacity: 0;}
@@ -57,20 +67,42 @@ hr {
 	border: 1px solid #888888;
 }
 
+p {
+	display: none;
+	opacity: 0;
+}
+
+.intro {
+	height: 0px;
+	font-size: 77px;
+	animation-name: dropPresent;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	/*Safari & Chromium*/
+	-webkit-animation-name: dropPresent;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
 .container {
-	margin-top: 12px;
+	margin-top: 171px;
 	margin-right: auto;
 	margin-bottom: auto;
 	margin-left: auto;
 	height: auto;
 	width: 777px;
-	/*box-shadow: 8px 8px 8px #000000;*/
 	font-size: 18px;
 	text-align: left;
 }
 
 .aLink {
-	color: #BDBDFF;
+	color: #2C75FF;
+}
+
+.aLink:hover {
+	color: #035096;
 }
 
 /*------------NOTIFICATIONS------------*/
@@ -180,4 +212,13 @@ hr {
 .centerLink {
 	text-align: center;
 	padding-top:12px;
+}
+
+/*------------INTRO------------*/
+
+#start {
+	height: 120px;
+	width: 66px;
+	margin: auto -12px auto -12px
+	overflow: hidden;
 }

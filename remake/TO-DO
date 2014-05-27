@@ -8,3 +8,9 @@ ENDREMEMBER
 - colors
 - main page
 - content
+
+- CONSIDER
+-- web storage as save/current state
+-- history.pushstate etc as save/current state
+-- multiple spawn areas
+-- fidle with intro more. use 's' as entry to game? no begin button?
