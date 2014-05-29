@@ -38,7 +38,7 @@
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">L</span>
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">U</span>
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">E</span>
-			<div id="start" style="display: inline-block; color: #2C75FF" onmouseenter="downMenu(this)" onmouseleave=""onclick="replaceF(this, 'begin');">trats</div>
+			<div id="startBtn" style="display: inline-block; color: #2C75FF" onmouseenter="insert(this, 'start')" onmouseleave="insert(this, 's')"onclick="replaceF(this, 'begin');">s</div>
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">H</span>
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">I</span>
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">F</span>
@@ -47,16 +47,16 @@
 		<div class="container" style="font-size: 24px;">
 			<!--short entry to introduce story-->
 			<p id="begin">
-				&nbsp;&nbsp;&nbsp;&nbsp;You are drifting, falling, flying effortlessly into a white expanse of light that now surrounds you. As the brightness diffuses, burning itself into your retina, you quickly close your eyes in an attempt to shut it out. Startlingly, the brightness that you saw with your eyelids open is still present with them closed and getting brighter every moment. Opening your eyes and twisting about in an effort to get some form of bearing does not change what you are seeing. The light buries itself into your mind, seizing it in a fantastic moment of <span class="aLink" onclick="replaceF(this, 'start')">pain...</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;You are drifting, falling, flying effortlessly into a white expanse of light that now surrounds you. As the brightness diffuses, burning itself into your retina, you quickly close your eyes in an attempt to shut it out. Startlingly, the brightness that you saw with your eyelids open is still present with them closed and getting brighter every moment. Opening your eyes and twisting about in an effort to get some form of bearing does not change what you are seeing. The light buries itself into your mind, seizing it in a fantastic moment of <span class="aLink" onclick="replaceF(this, 'spawn')">pain...</span>
 			</p>
 
 			<!--the spawn area. this will be used a lot-->
-			<p id="start">
+			<p id="spawn">
 				&nbsp;&nbsp;&nbsp;&nbsp;You awake with a start, opening your eyes to darkness, immediatly aware that whatever you are lying on is not your bed. The blackness surrounding you is formidable. Peering deeply into the black stillness around you is a frightening prospect, but not nearly as terrifying as the idea of <span class="aLink" onclick="replaceF(this, 'test')">navigating</span> your way around it without some form of lumination to help guide you.
 			</p>
 
 			<p id="test">
-				&nbsp;&nbsp;&nbsp;&nbsp;Slowly crawling off of the 'bed' you awoke on reveals a surprisingly warm but solid flooring. Its surface feels marred, cracked, weathered. Not only is it slightly warm but it feels as though it may be emanating heat. You consider <span class="aLink" onclick="replaceF(this, 'start')">crawling back</span> to where you came from, the idea of wherever it is that you are having a tepid floor <i>is</i> a bit unnerving. Despite having no idea where you are or what lies before you the idea of <a>moving forward</a> and exploring more of your environment whispers quietly in the back of your mind.
+				&nbsp;&nbsp;&nbsp;&nbsp;Slowly crawling off of the 'bed' you awoke on reveals a surprisingly warm but solid flooring. Its surface feels marred, cracked, weathered. Not only is it slightly warm but it feels as though it may be emanating heat. You consider <span class="aLink" onclick="replaceF(this, 'spawn')">crawling back</span> to where you came from, the idea of wherever it is that you are having a tepid floor <i>is</i> a bit unnerving. Despite having no idea where you are or what lies before you the idea of <a>moving forward</a> and exploring more of your environment whispers quietly in the back of your mind.
 			</p>
 		</div>
 	</body>

@@ -213,12 +213,3 @@ p {
 	text-align: center;
 	padding-top:12px;
 }
-
-/*------------INTRO------------*/
-
-#start {
-	height: 120px;
-	width: 66px;
-	margin: auto -12px auto -12px
-	overflow: hidden;
-}
