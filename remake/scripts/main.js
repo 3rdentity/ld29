@@ -16,44 +16,56 @@ function replace(name1, name2) {
 	show(name2);
 }
 
-function replaceF(name1, name2) {
-	fadeOut(name1);
-	fadeIn(name2);
+function replaceF(name1, name2, time1, time2) {
+	fadeOut(name1, time1);
+	fadeIn(name2, time2);
 }
 
-function fadeIn(name) {
+function fadeIn(name, time) {
 	var nameStr = name + "";
+	var fadeTime = "1s"; //default fadeTime
+	//if user has set time then fadeTime will be modified to it
+	if (time) {
+		fadeTime = time + "s";
+	}
 	var searchFor = "object";
 	var t = nameStr.indexOf(searchFor);
 	if (t != -1) {
-		show(name);
-		name.parentNode.style.animation = "invisToVis 1s 1 forwards";
+		setTimeout(function(){show(name);}, 80);
+		name.parentNode.style.animation = "invisToVis" + " " + fadeTime + " " + "1 forwards";
 		//Safari & Chromium
-		name.parentNode.style.WebkitAnimation = "invisToVis 1s 1 forwards";
+		name.parentNode.style.WebkitAnimation = "invisToVis" + fadeTime + "1 forwards";
 	}
 	else {
-		show(name);
-		document.getElementById(name).style.animation = "invisToVis 1s 1 forwards";
+		setTimeout(function(){show(name);}, 80);
+		document.getElementById(name).style.animation = "invisToVis" + " " + fadeTime + " " + "1 forwards";
 		//Safari & Chromium
-		document.getElementById(name).style.WebkitAnimation = "invisToVis 1s 1 forwards";
+		document.getElementById(name).style.WebkitAnimation = "invisToVis" + " " + fadeTime + " " + "1 forwards";
 	}
 }
 
-function fadeOut(name) {
+function fadeOut(name, time) {
 	var nameStr = name + "";
+	var fadeTime = "1s"; //default fadeTime
+	var wait = 30; //default wait is 30 milliseconds
+	//if user has set time then fadeTime will be set to it. wait will be set to time in milliseconds
+	if (time) {
+		fadeTime = time + "s";
+		wait = Number(time) * 1000;
+	}
 	var searchFor = "object";
 	var t = nameStr.indexOf(searchFor);
 	if (t != -1) {
-		name.parentNode.style.animation = "visToInvis 1s 1 forwards";
+		name.parentNode.style.animation = "visToInvis" + " " + fadeTime + " " + "1 forwards";
 		//Safari & Chromium
-		name.parentNode.style.WebkitAnimation = "visToInvis 1s 1 forwards";
-		hide(name);
+		name.parentNode.style.WebkitAnimation = "visToInvis" + " " + fadeTime + " " + "1 forwards";
+		setTimeout(function(){hide(name);}, wait); //object will disappear before fadeTime if hide is not delayed
 	}
 	else {
-		document.getElementById(name).style.animation = "visToInvis 1s 1 forwards";
+		document.getElementById(name).style.animation = "visToInvis" + " " + fadeTime + " " + "1 forwards";
 		//Safari & Chromium
-		document.getElementById(name).style.WebkitAnimation = "visToInvis 1s 1 forwards";
-		hide(name);
+		document.getElementById(name).style.WebkitAnimation = "visToInvis" + " " + fadeTime + " " + "1 forwards";
+		setTimeout(function(){hide(name);}, wait); //object will disappear before fadeTime if hide is not delayed
 	}
 }
 
@@ -87,6 +99,16 @@ function show(name) {
 ############TYPEWRITE############
 #################################
 */
+
+var theBeginning = [
+	"There once was a young, young sailor,",
+	"she traveled the seven seas.",
+	"Far and abroad, in search of treasure,",
+	"she fared the most dangerous of places.",
+	"Traveling to each destination made her feel desitute,",
+	"as each moment that passed was another without that which she desired."
+];
+
 //typewrite() variables
 var tw_array = "";
 var tw_id = "";
@@ -94,7 +116,7 @@ var tw_index = 0;
 
 //comment out if visible rows of text are not to be limited
 var tw_row = 0;
-var tw_rowMax = 2; //will be used by typewrite() to limit tw_row, thereby limiting visible rows of text in object/tw_id
+var tw_rowMax = 3; //will be used by typewrite() to limit tw_row, thereby limiting visible rows of text in object/tw_id
 
 var tw_blinks = 0;
 var tw_blinksMax = 12; //will be used to limit tw_blinkIn()'s' & tw_blinkOut()'s number of 'blinks'. if changing tw_blinksMax, consider changing tw_blinkSpeed. keep far below typewrite()'s newlineSpeed
@@ -140,7 +162,7 @@ function typewrite(name1, name2) {
   	}
         
 	tw_currContents = tw_array[tw_index].substring(0, tw_currPos);
-    document.getElementById(tw_id).innerHTML = tw_contents + tw_currContents + "_";
+    document.getElementById(tw_id).innerHTML = tw_contents + tw_currContents + "|";
     //checks if tw_currPos is at the end of the current string/tw_index and moves tw_currPos to the next character if not
     if (tw_currPos != tw_strLength) {
     	tw_currPos++;
@@ -195,13 +217,13 @@ function tw_blinkOut() {
 function tw_blinkIn() {
 	if (tw_blinks < tw_blinksMax) {
 		tw_blinks++;
-		document.getElementById(tw_id).innerHTML = tw_contents + "_";
+		document.getElementById(tw_id).innerHTML = tw_contents + "|";
 		setTimeout("tw_blinkOut()", tw_blinkSpeed);
 		return;
 	}
 	//stops tw_blinks from increasing forever at end of tw_array
 	else if (tw_blinks > tw_blinksMax) {
-		document.getElementById(tw_id).innerHTML = tw_contents + "_";
+		document.getElementById(tw_id).innerHTML = tw_contents + "|";
 		setTimeout("tw_blinkOut()", tw_blinkSpeed);
 		return;
 	}

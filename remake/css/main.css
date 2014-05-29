@@ -1,4 +1,8 @@
-/*FONTS*/
+/*
+#############################
+############FONTS############
+#############################
+*/
 
 @font-face {
     font-family: 'oswall';
@@ -11,16 +15,20 @@
     font-style: normal;
 }
 
-/*------------ANIMATIONS------------*/
+/*
+##################################
+############ANIMATIONS############
+##################################
+*/
 
 @keyframes dropPresent {
-	0% {margin: 161px 0px 0px 0px; opacity: 0; font-size: 77px;}
-	100% {margin: 333px 0px 0px 0px; opacity: 1; font-size: 123px;}
+	0% {margin: 70px 0px 0px 0px; opacity: 0; font-size: 77px;}
+	100% {margin: 181px 0px 0px 0px; opacity: 1; font-size: 123px;}
 }
 /*Safari & Chromium*/
 @-webkit-keyframes dropPresent {
-	0% {margin: 161px 0px 0px 0px; opacity: 0; font-size: 77px;}
-	100% {margin: 333px 0px 0px 0px; opacity: 1; font-size: 123px;}
+	0% {margin: 70px 0px 0px 0px; opacity: 0; font-size: 77px;}
+	100% {margin: 181px 0px 0px 0px; opacity: 1; font-size: 111px;}
 }
 
 @keyframes invisToVis {
@@ -43,13 +51,17 @@
 	100% {opacity: 0;}
 }
 
-/*------------UNIVERSAL------------*/
+/*
+#################################
+############UNIVERSAL############
+#################################
+*/
 
 body {
 	cursor: default;
 	font-family: 'oswall';
 	background-color: #101010;
-	color: #BBBBBB;
+	color: #AAAAAA;
 	text-align: center;
 	font-size: 24px;
 }
@@ -60,7 +72,6 @@ body {
 
 a {
 	color: #BBBBBB;
-	cursor: default;
 }
 
 hr {
@@ -70,20 +81,6 @@ hr {
 p {
 	display: none;
 	opacity: 0;
-}
-
-.intro {
-	height: 0px;
-	font-size: 77px;
-	animation-name: dropPresent;
-	animation-duration: 3s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-	/*Safari & Chromium*/
-	-webkit-animation-name: dropPresent;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-fill-mode: forwards;
 }
 
 .container {
@@ -98,14 +95,18 @@ p {
 }
 
 .aLink {
-	color: #2C75FF;
+	color: #536878;
 }
 
 .aLink:hover {
-	color: #035096;
+	color: #AAAAAA;
 }
 
-/*------------NOTIFICATIONS------------*/
+/*
+#####################################
+############NOTIFICATIONS############
+#####################################
+*/
 
 .noJavaNotify {
 	margin: -8px auto 8px auto;
@@ -165,7 +166,11 @@ p {
 	color: #000000;
 }
 
-/*------------NOSCRIPT&OLDBROWSER------------*/
+/*
+###########################################
+############NOSCRIPT&OLDBROWSER############
+###########################################
+*/
 
 .browserIcons {
 	text-align: center;
@@ -212,4 +217,54 @@ p {
 .centerLink {
 	text-align: center;
 	padding-top:12px;
+}
+
+/*
+#############################
+############INTRO############
+#############################
+*/
+
+#introFadeBox {
+	position: absolute;
+	top: -24px;
+	height: 333px;
+	width: 80%;
+	background-color: #101010;
+}
+
+#introTextArea {
+	z-index: -1;
+	box-shadow: 0px 0px 12px #888888;
+	text-shadow: 0px 0px 1px #536878;
+	margin-top: 33px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 8px;
+	height: 212px;
+	width: 484px;
+	border-style: solid;
+	border-radius: 3px;
+	border-width: 3px;
+	border-color: #888888;
+	font-size: 24px;
+	line-height: ;
+	word-wrap: break-word;
+	text-align: left;
+	color: #536878;
+}
+
+.intro {
+	height: 0px;
+	font-size: 77px;
+	animation-name: dropPresent;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	/*Safari & Chromium*/
+	-webkit-animation-name: dropPresent;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
 }

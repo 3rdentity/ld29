@@ -14,6 +14,10 @@
 		<script src="scripts/main.js"></script>
 		<!--INSERT FAVICON?-->
 		<title>BLUEsHIFT</title>
+		<script>
+			setTimeout(function(){fadeOut("introFadeBox", "3");}, 3000);
+			setTimeout(function(){typewrite("introTextArea", theBeginning);}, 5000);
+		</script>
 	</head>
 	<body>
 		<!--banner?-->
@@ -33,12 +37,14 @@
 				<a href="oldBrowser.html"><div id="notifyBtn" style="background-color: #F8D86A" onMouseDown="clickBtn(this)">learn more</div></a>
 			</div>
 		<![endif]-->
+		<div id="introFadeBox"></div>
+		<div id="introTextArea"></div>
 		<div class="intro">
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">B</span>
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">L</span>
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">U</span>
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">E</span>
-			<div id="startBtn" style="display: inline-block; color: #2C75FF" onmouseenter="insert(this, 'start')" onmouseleave="insert(this, 's')"onclick="replaceF(this, 'begin');">s</div>
+			<div id="startBtn" style="display: inline-block; color: #035096" onmouseenter="insert(this, 'start')" onmouseleave="insert(this, 's')"onclick="fadeOut('introTextArea', '0'); replaceF(this, 'begin', '0', '1');">s</div>
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">H</span>
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">I</span>
 			<span onmouseenter="this.style.opacity = .1" onmouseleave="this.style.opacity = 1">F</span>
