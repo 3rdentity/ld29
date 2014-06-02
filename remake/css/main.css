@@ -71,7 +71,9 @@ body {
 }
 
 a {
+	cursor: default;
 	color: #BBBBBB;
+	text-decoration: none;
 }
 
 hr {
