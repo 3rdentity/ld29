@@ -16,8 +16,7 @@ ENDREMEMBER
 -- fidle with intro more. use 's' as entry to game? no begin button?
 -- rename main.js to reflect personal library of js
 -- remember to minify/minimize http req.
+-- random storyline/puzzles/reactions, etc?
 
 - TYPEWRITE
--- random array selection if no array selected?
 -- stop conditions/while loop to stop when flag is set?
--- pull random strings from array?
