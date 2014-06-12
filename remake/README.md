@@ -1,1 +1,0 @@
-This is an early foray into JavaScript in an effort to take an idea from a Ludum Dare 29 jam entry and make a complete game. The entry in question can be viewed at <http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=34866>.
